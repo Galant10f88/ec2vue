@@ -160,7 +160,7 @@ export default [
     icon: mdiLock,
   },
   {
-    href: "https://github.com/Galant10f88/Cryptable",
+    href: "https://github.com/Galant10f88/ec2vue",
     label: "GitHub",
     icon: mdiGithub,
     target: "_blank",

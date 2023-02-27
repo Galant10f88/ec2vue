@@ -74,7 +74,7 @@ export default [
     icon: mdiGithub,
     label: "GitHub",
     isDesktopNoLabel: true,
-    href: "https://github.com/Galant10f88/Cryptable",
+    href: "https://github.com/Galant10f88/ec2vue",
     target: "_blank",
   },
   {

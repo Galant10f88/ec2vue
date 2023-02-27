@@ -19,7 +19,7 @@ import { gradientBgPinkRed } from "@/colors";
         rounded-full
       />
       <BaseButton
-        href="https://github.com/justboil/admin-one-vue-tailwind"
+        href="https://github.com/Galant10f88/ec2vue"
         :icon="mdiGithub"
         label="GitHub"
         target="_blank"
