@@ -17,7 +17,122 @@ export default [
   {
     to: "/dashboard",
     icon: mdiMonitor,
-    label: "Dashboard",
+    label: "Home",
+  },
+  {
+    label: "Our Software",
+    icon: mdiViewList,
+    menu: [
+      {
+        label: "Choice Help",
+        to: "/error",
+      },
+      {
+        label: "BioDose/NMIS",
+        to: "/error",
+      },
+      {
+        label: "Numa",
+        to: "/error",
+      },
+      {
+        label: "BioRX/RMIS",
+        to: "/error",
+      },
+      {
+        label: "BioPointe",
+        to: "/error",
+      },
+      {
+        label: "BioTrax QMS",
+        to: "/error",
+      },
+      {
+        label: "BioRX/RMIS",
+        to: "/error",
+      },
+      {
+        label: "Patient Reporting",
+        to: "/error",
+      },
+      {
+        label: "Interface Options",
+        to: "/error",
+      },
+      {
+        label: "Videos",
+        to: "/error",
+      },
+    ],
+  },
+  {
+    label: "Support",
+    icon: mdiViewList,
+    menu: [
+      {
+        label: "Support Community",
+        to: "/error",
+      },
+      {
+        label: "FAQs",
+        to: "/error",
+      },
+      {
+        label: "Downloads/Guides",
+        to: "/error",
+      },
+      {
+        label: "Hardware Req",
+        to: "/error",
+      },
+      {
+        label: "Support Portal",
+        to: "/error",
+      },
+    ],
+  },
+  {
+    to: "/error",
+    label: "Supplies",
+    icon: mdiAlertCircle,
+  },
+  {
+    label: "About Us",
+    icon: mdiViewList,
+    menu: [
+      {
+        label: "Contact Us",
+        to: "/error",
+      },
+      {
+        label: "Blog",
+        to: "/error",
+      },
+      {
+        label: "History",
+        to: "/error",
+      },
+      {
+        label: "Careers",
+        to: "/error",
+      },
+      {
+        label: "Press Room",
+        to: "/error",
+      },
+      {
+        label: "Privacy Policy",
+        to: "/error",
+      },
+      {
+        label: "Terms of Service",
+        to: "/error",
+      },
+      {
+        label: "Security Policy",
+        to: "/error",
+      },
+    ],
   },
   {
     to: "/tables",
@@ -28,16 +143,6 @@ export default [
     to: "/forms",
     label: "Forms",
     icon: mdiSquareEditOutline,
-  },
-  {
-    to: "/ui",
-    label: "UI",
-    icon: mdiTelevisionGuide,
-  },
-  {
-    to: "/responsive",
-    label: "Responsive",
-    icon: mdiResponsive,
   },
   {
     to: "/",
@@ -55,32 +160,9 @@ export default [
     icon: mdiLock,
   },
   {
-    to: "/error",
-    label: "Error",
-    icon: mdiAlertCircle,
-  },
-  {
-    label: "Dropdown",
-    icon: mdiViewList,
-    menu: [
-      {
-        label: "Item One",
-      },
-      {
-        label: "Item Two",
-      },
-    ],
-  },
-  {
-    href: "https://github.com/justboil/admin-one-vue-tailwind",
+    href: "https://github.com/Galant10f88/Cryptable",
     label: "GitHub",
     icon: mdiGithub,
-    target: "_blank",
-  },
-  {
-    href: "https://github.com/justboil/admin-one-react-tailwind",
-    label: "React version",
-    icon: mdiReact,
     target: "_blank",
   },
 ];

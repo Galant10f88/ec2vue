@@ -84,7 +84,7 @@ const menuClick = (event, item) => {
             placeholder="Search (ctrl+k)"
             ctrl-k-focus
             transparent
-            borderless
+            bordered
           />
         </NavBarItemPlain>
       </NavBar>
@@ -97,12 +97,12 @@ const menuClick = (event, item) => {
       />
       <slot />
       <FooterBar>
-        Get more with
+        Help me
         <a
-          href="https://tailwind-vue.justboil.me/"
+          href="https://www.ec2software.com/our-software/help-me-choose"
           target="_blank"
-          class="text-blue-600"
-          >Premium version</a
+          class="text-green-600"
+          >Choose</a
         >
       </FooterBar>
     </div>

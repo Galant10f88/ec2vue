@@ -1,13 +1,13 @@
 export const basic = {
-  aside: "bg-gray-800",
+  aside: "bg-teal-900",
   asideScrollbars: "aside-scrollbars-gray",
   asideBrand: "bg-gray-900 text-white",
   asideMenuItem: "text-gray-300 hover:text-white",
   asideMenuItemActive: "font-bold text-white",
-  asideMenuDropdown: "bg-gray-700/50",
-  navBarItemLabel: "text-black",
-  navBarItemLabelHover: "hover:text-blue-500",
-  navBarItemLabelActiveColor: "text-blue-600",
+  asideMenuDropdown: "bg-teal-700/50",
+  navBarItemLabel: "text-teal-900",
+  navBarItemLabelHover: "hover:text-green-500",
+  navBarItemLabelActiveColor: "text-teal-600",
   overlay: "from-gray-700 via-gray-900 to-gray-700",
 };
 

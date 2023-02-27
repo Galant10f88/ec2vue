@@ -33,9 +33,9 @@ const click = (slug) => {
           Pick a style&hellip;
         </h1>
         <h2 class="text-xl md:text-xl text-center text-white mb-12">
-          Style switching with a single
+          Hello! Welcome to <span class="px-1.5 py-0.5 rounded bg-black bg-opacity-80 text-green-500 font-bold">EC2</span> Vue Test
           <code class="px-1.5 py-0.5 rounded bg-white bg-opacity-20"
-            >action()</code
+            >Presentation()</code
           >
         </h2>
         <div

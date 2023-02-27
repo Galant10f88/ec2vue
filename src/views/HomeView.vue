@@ -2,6 +2,7 @@
 import { computed, ref, onMounted } from "vue";
 import { useMainStore } from "@/stores/main";
 import {
+  mdiHospitalBoxOutline,
   mdiAccountMultiple,
   mdiCartOutline,
   mdiChartTimelineVariant,
@@ -44,91 +45,50 @@ const transactionBarItems = computed(() => mainStore.history);
 <template>
   <LayoutAuthenticated>
     <SectionMain>
-      <SectionTitleLineWithButton
-        :icon="mdiChartTimelineVariant"
-        title="Overview"
+      <SectionTitleLineWithButton class="text-green-600 font-semibold"
+        :icon="mdiHospitalBoxOutline"
+        title="EC2 Solutions"
         main
       >
-        <BaseButton
-          href="https://github.com/justboil/admin-one-vue-tailwind"
-          target="_blank"
-          :icon="mdiGithub"
-          label="Star on GitHub"
-          color="contrast"
-          rounded-full
-          small
-        />
       </SectionTitleLineWithButton>
 
-      <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 mb-6">
-        <CardBoxWidget
-          trend="12%"
-          trend-type="up"
-          color="text-emerald-500"
-          :icon="mdiAccountMultiple"
-          :number="512"
-          label="Clients"
-        />
-        <CardBoxWidget
-          trend="12%"
-          trend-type="down"
-          color="text-blue-500"
-          :icon="mdiCartOutline"
-          :number="7770"
-          prefix="$"
-          label="Sales"
-        />
-        <CardBoxWidget
-          trend="Overflow"
-          trend-type="alert"
-          color="text-red-500"
-          :icon="mdiChartTimelineVariant"
-          :number="256"
-          suffix="%"
-          label="Performance"
-        />
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-        <div class="flex flex-col justify-between">
-          <CardBoxTransaction
-            v-for="(transaction, index) in transactionBarItems"
-            :key="index"
-            :amount="transaction.amount"
-            :date="transaction.date"
-            :business="transaction.business"
-            :type="transaction.type"
-            :name="transaction.name"
-            :account="transaction.account"
-          />
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 mb-6">
+        <div class="relative h-[250px] w-[500px] cursor-pointer">
+          <img class="rounded-md" src="../../public/Biodose.jpg" />
+          <div class="absolute bottom-2 left-4 right-0 px-4 py-2 bg-gray-800 opacity-70 hover:opacity-90 w-11/12 rounded-md backdrop-blur transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">
+            <h3 class="text-xl text-white font-bold">
+                Department Management</h3>
+            <p class="mt-2 text-sm text-gray-300">Explore this solution</p>
+          </div>
         </div>
-        <div class="flex flex-col justify-between">
-          <CardBoxClient
-            v-for="client in clientBarItems"
-            :key="client.id"
-            :name="client.name"
-            :login="client.login"
-            :date="client.created"
-            :progress="client.progress"
-          />
+        <div class="relative h-[250px] w-[500px] cursor-pointer">
+          <img class="rounded-md" src="../../public/Bior.jpg" />
+          <div class="absolute bottom-2 left-4 right-0 px-4 py-2 bg-gray-800 opacity-70 hover:opacity-90 w-11/12 rounded-md backdrop-blur transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">
+            <h3 class="text-xl text-white font-bold">
+                Radiopharmacy Management</h3>
+            <p class="mt-2 text-sm text-gray-300">Explore this solution</p>
+          </div>
+        </div>
+        <div class="relative h-[250px] w-[500px] cursor-pointer">
+          <img class="rounded-md" src="../../public/Biotrax.jpg" />
+          <div class="absolute bottom-2 left-4 right-0 px-4 py-2 bg-gray-800 opacity-70 hover:opacity-90 w-11/12 rounded-md backdrop-blur transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">
+            <h3 class="text-xl text-white font-bold">
+                Cyclotron Quality Management</h3>
+            <p class="mt-2 text-sm text-gray-300">Explore this solution</p>
+          </div>
+        </div>
+        <div class="relative h-[250px] w-[500px] cursor-pointer">
+          <img class="rounded-md" src="../../public/Numa.jpg" />
+          <div class="absolute bottom-2 left-4 right-0 px-4 py-2 bg-gray-800 opacity-70 hover:opacity-90 w-11/12 rounded-md backdrop-blur transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300">
+            <h3 class="text-xl text-white font-bold">
+                IT interconnectivity & Interfaces</h3>
+            <p class="mt-2 text-sm text-gray-300">Explore this solution</p>
+          </div>
         </div>
       </div>
 
       <SectionBannerStarOnGitHub class="mt-6 mb-6" />
 
-      <SectionTitleLineWithButton :icon="mdiChartPie" title="Trends overview">
-        <BaseButton
-          :icon="mdiReload"
-          color="whiteDark"
-          @click="fillChartData"
-        />
-      </SectionTitleLineWithButton>
-
-      <CardBox class="mb-6">
-        <div v-if="chartData">
-          <line-chart :data="chartData" class="h-96" />
-        </div>
-      </CardBox>
 
       <SectionTitleLineWithButton :icon="mdiAccountMultiple" title="Clients" />
 

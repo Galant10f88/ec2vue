@@ -15,22 +15,26 @@ import {
 export default [
   {
     icon: mdiMenu,
-    label: "Sample menu",
+    label: "Menu",
     menu: [
       {
         icon: mdiClockOutline,
-        label: "Item One",
+        label: "Departments",
       },
       {
         icon: mdiCloud,
-        label: "Item Two",
+        label: "Radiopharmacy",
+      },
+      {
+        icon: mdiCloud,
+        label: "Cyclotron",
       },
       {
         isDivider: true,
       },
       {
         icon: mdiCrop,
-        label: "Item Last",
+        label: "IT Interfaces",
       },
     ],
   },
@@ -70,14 +74,7 @@ export default [
     icon: mdiGithub,
     label: "GitHub",
     isDesktopNoLabel: true,
-    href: "https://github.com/justboil/admin-one-vue-tailwind",
-    target: "_blank",
-  },
-  {
-    icon: mdiReact,
-    label: "React version",
-    isDesktopNoLabel: true,
-    href: "https://github.com/justboil/admin-one-react-tailwind",
+    href: "https://github.com/Galant10f88/Cryptable",
     target: "_blank",
   },
   {
